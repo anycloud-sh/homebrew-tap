@@ -1,21 +1,21 @@
 class Anycloud < Formula
   desc "Run AI workloads on any cloud account to find the cheapest GPU"
   homepage "https://anycloud.sh"
-  version "0.1.59"
+  version "0.1.60"
   license :cannot_represent
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.59/anycloud-darwin-arm64.tar.gz"
-    sha256 "65b5f8fb3e6eee0354bc65099c14825a103a606cc5840d9b48f536b9c8e1d51d"
+    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.60/anycloud-darwin-arm64.tar.gz"
+    sha256 "d27a272eb0f2b3dcc64455a1495b3324d52d2947959dbd52340bdf06f35ada09"
   elsif OS.mac?
-    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.59/anycloud-darwin-x64.tar.gz"
-    sha256 "6406b4fed552e31efbddd0ed4aa45f374b3594c78dd140ff5f5fdb8c2d15dad4"
+    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.60/anycloud-darwin-x64.tar.gz"
+    sha256 "03f188efc8117a44d73ff6696b5b38c6eb2ddfcc88c938bd66fa103f0082ef65"
   elsif Hardware::CPU.arm?
-    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.59/anycloud-linux-arm64.tar.gz"
-    sha256 "58a45709f3d007564c0abf12cb72a67755140a50b3e428f3d947ad268b328106"
+    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.60/anycloud-linux-arm64.tar.gz"
+    sha256 "c131d9ef5c44d3dc418f7734e3909afba2b4e7f1f9227ad48b9ae145c5b01f0d"
   else
-    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.59/anycloud-linux-x64.tar.gz"
-    sha256 "b7cf2ff0c65aa0115b93ef0fa82392ae57eefd02f6f9214f92bd6e4a20b4ace4"
+    url "https://github.com/anycloud-sh/releases/releases/download/v0.1.60/anycloud-linux-x64.tar.gz"
+    sha256 "db5d99a3aef79f1a3c456274ccf1e38d61ab91a955f96504273a95f13a56beab"
   end
 
   def install
